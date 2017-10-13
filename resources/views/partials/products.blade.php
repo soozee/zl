@@ -4,7 +4,7 @@
 
 @if ($query->have_posts())
 
-  <div class="grid-x small-up-2 medium-up-3 large-up-4">
+  <div class="grid-x small-up-2 medium-up-3 large-up-4 grid">
 
     @while ( $query->have_posts() )
 
