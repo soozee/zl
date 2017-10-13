@@ -1,18 +1,9 @@
-<div class="orbit" role="region" aria-label="Favorite Space Pictures" data-orbit>
-      <ul class="orbit-container">
-        <button class="orbit-previous" aria-label="previous"><span class="show-for-sr">Previous Slide</span>&#9664;</button>
-        <button class="orbit-next" aria-label="next"><span class="show-for-sr">Next Slide</span>&#9654;</button>
-        <li class="orbit-slide is-active">
-          <img src="http://placehold.it/2000x750">
-        </li>
-        <li class="orbit-slide">
-          <img src="http://placehold.it/2000x750">
-        </li>
-        <li class="orbit-slide">
-          <img src="http://placehold.it/2000x750">
-        </li>
-        <li class="orbit-slide">
-          <img src="http://placehold.it/2000x750">
-        </li>
-      </ul>
+<div class="grid-container fluid">
+  <div class="grid-x grid-margin-x hero">
+    <div class="cell small-4"></div>
+    <div class="cell small-4">
+      <img src="http://zoelaz.dev/wp-content/uploads/2017/10/zoe.jpg">
     </div>
+    <div class="cell small-4"></div>
+  </div>
+</div>

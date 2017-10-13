@@ -3,7 +3,7 @@
 }
 
 $sticky-shrinknav-menu-height: rem-calc(60);
-$sticky-shrinknav-hero-height: 300px;
+$sticky-shrinknav-hero-height: 200px;
 
 body {
   padding-top: $sticky-shrinknav-hero-height + 30px;
@@ -16,12 +16,13 @@ body {
   height: $sticky-shrinknav-menu-height;
   line-height: $sticky-shrinknav-menu-height;
   width: 100%;
-  background-color: rgba($primary-color, 0.1);
+  background-color: #fff;
   transition: all 0.5s ease;
 
   li {
     border-radius: 2px;
     transition: all 0.3s ease;
+    font-family: 'Poiret One', cursive;
 
     &:hover {
       box-shadow: 0 0 0 1px $white;
@@ -29,8 +30,12 @@ body {
   }
 
   a {
-    color: $white;
+    color: $black;
   }
+}
+
+header h1 {
+  font-family: 'Poiret One', cursive;
 }
 
 .sticky-shrinknav-header-title {
@@ -38,7 +43,7 @@ body {
   position: relative;
   transform: translateY(-$sticky-shrinknav-menu-height/2);
   margin-bottom: 0;
-  color: $white;
+  color: $black;
 }
 
 .sticky-shrinknav-header {
@@ -47,7 +52,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: lighten($primary-color, 10%);
+  background-color: #fff;
   text-align: center;
   position: fixed;
   top: 0;
@@ -61,11 +66,12 @@ body.sticky-shrinknav-wrapper {
 
   .sticky-shrinknav-header {
     height: $sticky-shrinknav-menu-height;
-    background-color: rgba($primary-color, 0.9);
+    background-color: #fff;
 
     .sticky-shrinknav-header-title {
       transform: scale(0);
       transition: all 0.3s ease;
+      font-family: 'Amatic SC', cursive;
     }
   }
 }

@@ -1,31 +1,22 @@
-<div class="row column text-center">
-      <h2>Our Newest Products</h2>
-      <hr>
-    </div>
+@php($query = new WP_Query([
+  'post_type' => 'product'
+]))
 
-    <div class="row small-up-2 large-up-4">
-      <div class="column">
-        <img class="thumbnail" src="http://placehold.it/300x400">
-        <h5>Nulla At Nulla Justo, Eget</h5>
-        <p>$400</p>
-        <a href="#" class="button expanded">Buy</a>
-      </div>
-      <div class="column">
-        <img class="thumbnail" src="http://placehold.it/300x400">
-        <h5>Nulla At Nulla Justo, Eget</h5>
-        <p>$400</p>
-        <a href="#" class="button expanded">Buy</a>
-      </div>
-      <div class="column">
-        <img class="thumbnail" src="http://placehold.it/300x400">
-        <h5>Nulla At Nulla Justo, Eget</h5>
-        <p>$400</p>
-        <a href="#" class="button expanded">Buy</a>
-      </div>
-      <div class="column">
-        <img class="thumbnail" src="http://placehold.it/300x400">
-        <h5>Nulla At Nulla Justo, Eget</h5>
-        <p>$400</p>
-        <a href="#" class="button expanded">Buy</a>
-      </div>
-    </div>
+@if ($query->have_posts())
+
+  <div class="grid-x small-up-2 medium-up-3 large-up-4">
+
+    @while ( $query->have_posts() )
+
+      @php($query->the_post())
+
+      @include('partials.product')
+
+    @endwhile
+
+  </div>
+@else
+    Nothing is here.
+@endif
+
+@php(wp_reset_postdata())
