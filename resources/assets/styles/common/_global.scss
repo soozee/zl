@@ -1,3 +1,27 @@
 h1 {
   font-family: 'Poiret One', cursive;
 }
+
+.single-product #page {
+  padding: 0 10%;
+
+  #sidebar {
+    display: none;
+  }
+}
+
+.single-product,
+.product-template-default,
+.woocommerce,
+.page-id-17 {
+  .container {
+    padding: 0 10% 2%;
+  }
+}
+
+.hero img {
+  max-height: 300px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+

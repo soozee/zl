@@ -12,6 +12,8 @@ use Roots\Sage\Template\BladeProvider;
  */
 add_action('wp_enqueue_scripts', function () {
     wp_enqueue_style('sage/main.css', asset_path('styles/main.css'), false, null);
+    wp_enqueue_style('google-fonts', 'https://fonts.googleapis.com/css?family=Amatic+SC|Poiret+One', false, null);
+
     wp_enqueue_script('sage/main.js', asset_path('scripts/main.js'), ['jquery'], null, true);
 }, 100);
 
@@ -66,6 +68,8 @@ add_action('after_setup_theme', function () {
      * @see resources/assets/styles/layouts/_tinymce.scss
      */
     add_editor_style(asset_path('styles/main.css'));
+
+    add_theme_support('woocommerce');
 }, 20);
 
 /**
@@ -125,5 +129,29 @@ add_action('after_setup_theme', function () {
     sage('blade')->compiler()->directive('asset', function ($asset) {
         return "<?= " . __NAMESPACE__ . "\\asset_path({$asset}); ?>";
     });
+});
+
+add_action('init', function() {
+    register_post_type('blog',
+      [
+        // Define all labels that you want within admin UI here
+        // https://codex.wordpress.org/Function_Reference/register_post_type
+        'labels' => [
+            'name' => __( 'Blog Posts' ),
+            'singular_name' => __( 'blog' ),
+            'add_new_item' => __( 'Add New Blog Post'),
+            // 'add_new' => __( 'Add new staff member'),
+            // 'new_item' => __( 'Add new staff member')
+        ],
+        'public' => true,
+        'has_archive' => true,
+        'supports' => [
+            'thumbnail',
+            'title',
+            'editor',
+            'custom-fields'
+        ]
+      ]
+    );
 });
 
