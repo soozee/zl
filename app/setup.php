@@ -131,27 +131,33 @@ add_action('after_setup_theme', function () {
     });
 });
 
-add_action('init', function() {
-    register_post_type('blog',
-      [
-        // Define all labels that you want within admin UI here
-        // https://codex.wordpress.org/Function_Reference/register_post_type
-        'labels' => [
-            'name' => __( 'Blog Posts' ),
-            'singular_name' => __( 'blog' ),
-            'add_new_item' => __( 'Add New Blog Post'),
-            // 'add_new' => __( 'Add new staff member'),
-            // 'new_item' => __( 'Add new staff member')
-        ],
-        'public' => true,
-        'has_archive' => true,
-        'supports' => [
-            'thumbnail',
-            'title',
-            'editor',
-            'custom-fields'
-        ]
-      ]
-    );
+/**
+ * ACF options
+ */
+
+
+add_action( 'init', function() {
+    if( function_exists('acf_add_options_page') ) {
+
+        acf_add_options_page(array(
+            'page_title'    => 'Theme General Settings',
+            'menu_title'    => 'Theme Settings',
+            'menu_slug'     => 'theme-general-settings',
+            'capability'    => 'edit_posts',
+            'redirect'      => false
+        ));
+
+        acf_add_options_sub_page(array(
+            'page_title'    => 'Theme Header Settings',
+            'menu_title'    => 'Header',
+            'parent_slug'   => 'theme-general-settings',
+        ));
+
+        acf_add_options_sub_page(array(
+            'page_title'    => 'Theme Footer Settings',
+            'menu_title'    => 'Footer',
+            'parent_slug'   => 'theme-general-settings',
+        ));
+    }
 });
 

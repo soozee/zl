@@ -8,25 +8,20 @@
           <p><a href="#"><i class="fa fa-envelope-o" aria-hidden="true"></i> Contact us</a></p>
           <p><i class="fa fa-map-marker fa-lg" aria-hidden="true"></i> Street, City, County, Country</p>
         </div>
-        <div class="newsletter">
+        {{-- <div class="newsletter">
           <div class="input-group">
             <h6>Sign up for our newsletter</h6>
           </div>
           <input class="input-group-field" type="email" placeholder="Email address">
           <a class="button expanded" href="#">Submit</a>
-        </div>
+        </div> --}}
       </div>
     </div>
     <div class="footer-center" data-equalizer-watch>
       <div class="baseline">
         <div class="newsletter">
           <h6>Contact form</h6>
-          <div class="input-group">
-            <input class="input-group-field" type="text" placeholder="Name">
-            <input class="input-group-field" type="email" placeholder="Email address">
-          </div>
-          <textarea placeholder="Message"></textarea>
-          <a class="button expanded" href="#">Submit</a>
+          {!! do_shortcode('[contact-form-7 id="84" title="Contact form 1"]') !!}
         </div>
       </div>
     </div>

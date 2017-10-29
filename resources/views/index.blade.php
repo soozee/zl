@@ -9,10 +9,10 @@
     </div>
     {!! get_search_form(false) !!}
   @endif
-
+<div class="grid-x small-up-2 medium-up-3 large-up-4 grid">
   @while (have_posts()) @php(the_post())
-    @include('partials.content-'.get_post_type())
+      @include('partials.content-'.get_post_type())
   @endwhile
-
+</div>
   {!! get_the_posts_navigation() !!}
 @endsection
