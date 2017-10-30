@@ -56,6 +56,8 @@
       ]
     },
     "rules": {
+      "no-console": "off",
+      "no-debugger": "off",
       "comma-dangle": [
         "error",
         {

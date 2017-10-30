@@ -29,9 +29,6 @@
       <div class="baseline">
         <img class="thumbnail" src="http://placehold.it/100">
         <h6>information people want to know</h6>
-        <p>things and stuff</p>
-        <p>Sat 9:00am - 8:00pm</p>
-        <p>Sun 9:00am - 4:00pm</p>
         <div class="social">
           <i class="fa fa-facebook-square fa-2x" aria-hidden="true"></i>
           <i class="fa fa-twitter-square fa-2x" aria-hidden="true"></i>
