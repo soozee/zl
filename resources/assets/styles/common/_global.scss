@@ -13,7 +13,9 @@ h1 {
 .single-product,
 .product-template-default,
 .woocommerce,
-.page-id-17 {
+.blog,
+.page-id-17,
+.single-post {
   .container {
     padding: 0 10% 2%;
   }
@@ -25,7 +27,7 @@ h1 {
   overflow: hidden;
 }
 
-.page-header h1 {
-  max-width: 1000px;
-  margin: 0 auto;
+.blog-image {
+  max-width: 30%;
 }
+

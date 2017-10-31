@@ -8,6 +8,12 @@
       width: 100%;
       text-align: center;
       text-shadow: 1px 1px rgba(0, 0, 0, 0.32);
+      z-index: 3;
+      -webkit-transition: all 0.3s ease;
+    }
+
+    .cell:hover {
+      -webkit-filter: opacity(0.3);
     }
   }
 }
