@@ -29,16 +29,18 @@ jQuery(document).ready(() => {
 });
 
 $(window).load(function(){
-  const grid = document.querySelector('.masonry')
-  const msnry = new Masonry(grid, {
-    itemSelector: '.cell',
-    transitionDuration: 0,
-    initLayout: false,
-  })
+  const grid = document.querySelector('.masonry');
+  if (grid) {
+    const msnry = new Masonry(grid, {
+      itemSelector: '.cell',
+      transitionDuration: 0,
+      initLayout: false,
+    })
 
-  msnry.once('layoutComplete', () => {
-    grid.classList.add('load')
-  })
+    msnry.once('layoutComplete', () => {
+      grid.classList.add('load');
+    })
 
-  msnry.layout()
+    msnry.layout();
+  }
 });

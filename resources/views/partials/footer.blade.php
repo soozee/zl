@@ -3,20 +3,10 @@
     <div class="footer-left" data-equalizer-watch>
       <div class="baseline">
         <div class="contact-details">
-          <h6>Contact details</h6>
-          <p><i class="fa fa-phone fa-lg" aria-hidden="true"></i> 01234 567890</p>
-          <p><a href="#"><i class="fa fa-envelope-o" aria-hidden="true"></i> Contact us</a></p>
-          <p><i class="fa fa-map-marker fa-lg" aria-hidden="true"></i> Street, City, County, Country</p>
-        </div>
-        {{-- <div class="newsletter">
-          <div class="input-group">
-            <h6>Sign up for our newsletter</h6>
-          </div>
-          <input class="input-group-field" type="email" placeholder="Email address">
-          <a class="button expanded" href="#">Submit</a>
-        </div> --}}
+          <img src="http://zoelaz.com/zl/wp-content/uploads/2017/10/570134c92376dc9ed108c0bf8744d9e0.jpg" />
       </div>
     </div>
+  </div>
     <div class="footer-center" data-equalizer-watch>
       <div class="baseline">
         <div class="newsletter">
@@ -27,13 +17,18 @@
     </div>
     <div class="footer-right" data-equalizer-watch>
       <div class="baseline">
-        <img class="thumbnail" src="http://placehold.it/100">
+        <img class="thumbnail" src="http://zoelaz.com/zl/wp-content/uploads/2017/10/Lightroom-0001-26.jpg">
         <h6>information people want to know</h6>
         <div class="social">
-          <i class="fa fa-facebook-square fa-2x" aria-hidden="true"></i>
-          <i class="fa fa-twitter-square fa-2x" aria-hidden="true"></i>
-          <i class="fa fa-google-plus-square fa-2x" aria-hidden="true"></i>
-          <i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i>
+          <a href="https://www.facebook.com/zoe.lazerson">
+            <i class="fa fa-facebook-square fa-2x" aria-hidden="true"></i>
+          </a>
+          <a href="https://twitter.com/zoelaz">
+            <i class="fa fa-twitter-square fa-2x" aria-hidden="true"></i>
+          </a>
+          <a href="https://www.instagram.com/zoelaz/">
+            <i class="fa fa-instagram fa-2x" aria-hidden="true"></i>
+          </a>
         </div>
       </div>
     </div>
