@@ -14,6 +14,9 @@
     .footer-left {
       .baseline {
         vertical-align: bottom;
+        max-height: 217px;
+        overflow: hidden;
+        margin-top: 32px;
       }
 
       .contact-details {
