@@ -1,7 +1,7 @@
 <div class="three-column-footer-contact-form-container">
   <footer class="three-column-footer-contact-form" data-equalizer data-equalize-by-row="true">
      <div class="footer-left">
-       <a href="contact">Contact</a>
+        {!! wp_nav_menu() !!}
      </div>
      <div class="footer-center">
        <p><i class="fa fa-copyright fa-1x" aria-hidden="true"></i> Copyright Zoelaz 2017</p>
