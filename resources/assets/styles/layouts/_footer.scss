@@ -1,14 +1,14 @@
 .three-column-footer-contact-form-container {
-  background-color: $dark-gray;
+  background-color: $white;
 
   .three-column-footer-contact-form {
     @include grid-row();
 
-    color: $light-gray;
+    color: $dark-gray;
     padding: rem-calc(10) 0;
 
     a {
-      color: $light-gray;
+      color: $dark-gray;
     }
 
     .footer-left {
@@ -95,10 +95,6 @@
       p {
         font-size: 0.8rem;
         margin-bottom: 0;
-      }
-
-      .fa {
-        padding: 1rem 0 1rem 0.2rem;
       }
 
       @include breakpoint(small) {

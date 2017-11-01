@@ -3,6 +3,9 @@
      <div class="footer-left">
        <a href="contact">Contact</a>
      </div>
+     <div class="footer-center">
+       <p><i class="fa fa-copyright fa-1x" aria-hidden="true"></i> Copyright Zoelaz 2017</p>
+     </div>
      <div class="footer-right">
       <div class="social">
           <a href="https://www.facebook.com/zoe.lazerson">
