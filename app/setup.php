@@ -42,7 +42,8 @@ add_action('after_setup_theme', function () {
      * @link https://developer.wordpress.org/reference/functions/register_nav_menus/
      */
     register_nav_menus([
-        'primary_navigation' => __('Primary Navigation', 'sage')
+        'primary_navigation' => __('Primary Navigation', 'sage'),
+        'footer_menu' => 'Footer Menu'
     ]);
 
     /**
@@ -58,7 +59,7 @@ add_action('after_setup_theme', function () {
     add_theme_support('html5', ['caption', 'comment-form', 'comment-list', 'gallery', 'search-form']);
 
     /**
-     * Enable selective refresh for widgets in customizer
+     * Enable selective refresh for wid`s in customizer
      * @link https://developer.wordpress.org/themes/advanced-topics/customizer-api/#theme-support-in-sidebars
      */
     add_theme_support('customize-selective-refresh-widgets');
@@ -164,3 +165,6 @@ add_action( 'init', function() {
     }
 });
 
+add_shortcode( 'social-icons', function() {
+    include \App\template_path(locate_template('partials/social-media-icons.blade.php'));
+});
