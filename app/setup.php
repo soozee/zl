@@ -166,5 +166,8 @@ add_action( 'init', function() {
 });
 
 add_shortcode( 'social-icons', function() {
+    ob_start();
     include \App\template_path(locate_template('partials/social-media-icons.blade.php'));
+
+    return ob_get_clean();
 });
