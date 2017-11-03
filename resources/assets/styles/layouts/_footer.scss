@@ -49,7 +49,7 @@
     }
 
     .footer-center {
-      text-align: left;
+      text-align: center;
 
       @include breakpoint(small) {
         @include grid-column(12);
