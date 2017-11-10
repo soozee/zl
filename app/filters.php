@@ -84,3 +84,15 @@ add_filter( 'get_the_archive_title', function($title) {
 
     return $title;
 });
+
+add_filter('pre_get_posts', function($query) {
+    if ( $query->is_home ) {
+        $category = get_category_by_slug( 'beauty' );
+        if ($category) {
+            $id = $category->term_id;
+            $query->set('cat', "-$id");
+       }
+    }
+
+    return $query;
+});
