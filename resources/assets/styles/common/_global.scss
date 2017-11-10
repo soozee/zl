@@ -10,16 +10,9 @@ h1 {
   }
 }
 
-.single-product,
-.product-template-default,
-.woocommerce,
-.blog,
-.page,
-.page-id-17,
-.single-post {
-  .container {
-    padding: 0 10% 2%;
-  }
+.container {
+  padding: 0 10% 2%;
+  max-width: 1200px;
 }
 
 .hero img {

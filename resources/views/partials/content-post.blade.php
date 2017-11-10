@@ -1,5 +1,5 @@
 <figure class="effect-ruby">
-    <img class="thumbnail" src="{{ the_post_thumbnail_url() }}">
+    <img class="thumbnail" src="{{ the_post_thumbnail_url('large') }}">
     <figcaption>
     <div>
         <h2>{{ the_title() }}</h2>

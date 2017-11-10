@@ -68,3 +68,19 @@ add_filter('comments_template', function ($comments_template) {
     );
     return template_path(locate_template(["views/{$comments_template}", $comments_template]) ?: $comments_template);
 });
+
+add_filter( 'get_the_archive_title', function($title) {
+    if ( is_category() ) {
+        return single_cat_title( '', false );
+    } elseif ( is_tag() ) {
+        return single_tag_title( '', false );
+    } elseif ( is_author() ) {
+        return '<span class="vcard">' . get_the_author() . '</span>';
+    } elseif ( is_post_type_archive() ) {
+        return post_type_archive_title( '', false );
+    } elseif ( is_tax() ) {
+        return single_term_title( '', false );
+    }
+
+    return $title;
+});
