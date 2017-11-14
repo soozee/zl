@@ -1,3 +1,5 @@
 @extends('layouts.app')
-@include('partials.home-page-masonry')
+@section('content')
+    @include('partials.home-page-masonry')
+@endsection
 
